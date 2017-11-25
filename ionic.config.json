@@ -2,5 +2,7 @@
   "name": "parksystem",
   "app_id": "98851cb9",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
