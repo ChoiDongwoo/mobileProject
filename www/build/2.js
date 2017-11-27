@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 330:
+/***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(338);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,7 +61,7 @@ var EmailValidator = (function () {
 
 /***/ }),
 
-/***/ 339:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -142,7 +142,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\workspace\parksystem\src\pages\login\login.html"*/`<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="primary">\n  <ion-title>Log In</ion-title>\n  </ion-navbar>\n  </ion-header>\n  <ion-content padding>\n  <img src="assets/imgs/front.jpg"/>\n  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>\n  <ion-item>\n  <ion-label stacked>Email</ion-label>\n  <ion-input formControlName="email" type="email"\n  placeholder="Your email address"\n  [class.invalid]="!loginForm.controls.email.valid &&\n  loginForm.controls.email.dirty">\n  </ion-input>\n  </ion-item>\n  <ion-item class="error-message"\n  *ngIf="!loginForm.controls.email.valid &&\n  loginForm.controls.email.dirty">\n  <p>Please enter a valid email address.</p>\n  </ion-item>\n  <ion-item>\n  <ion-label stacked>Password</ion-label>\n  <ion-input formControlName="password" type="password"\n  placeholder="Your password"\n  [class.invalid]="!loginForm.controls.password.valid &&\n  loginForm.controls.password.dirty"></ion-input>\n  </ion-item>\n  <ion-item class="error-message"\n  *ngIf="!loginForm.controls.password.valid &&\n  loginForm.controls.password.dirty">\n  <p>Your password needs more than 6 characters.</p>\n  </ion-item>\n  <button ion-button block type="submit" [disabled]="!loginForm.valid">\n      Log In\n    </button>\n    </form>\n    <button ion-button block clear (click)="goToSignup()">\n    Create a new account\n    </button>\n    <button ion-button block clear (click)="goToResetPassword()">\n    I forgot my password :(\n    </button>\n    </ion-content>`/*ion-inline-end:"C:\workspace\parksystem\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"D:\dev\mobileProject\mobileProject\src\pages\login\login.html"*/`<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary">\n\n  <ion-title>Log In</ion-title>\n\n  </ion-navbar>\n\n  </ion-header>\n\n  <ion-content padding>\n\n  <img src="assets/imgs/front.jpg"/>\n\n  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>\n\n  <ion-item>\n\n  <ion-label stacked>Email</ion-label>\n\n  <ion-input formControlName="email" type="email"\n\n  placeholder="Your email address"\n\n  [class.invalid]="!loginForm.controls.email.valid &&\n\n  loginForm.controls.email.dirty">\n\n  </ion-input>\n\n  </ion-item>\n\n  <ion-item class="error-message"\n\n  *ngIf="!loginForm.controls.email.valid &&\n\n  loginForm.controls.email.dirty">\n\n  <p>Please enter a valid email address.</p>\n\n  </ion-item>\n\n  <ion-item>\n\n  <ion-label stacked>Password</ion-label>\n\n  <ion-input formControlName="password" type="password"\n\n  placeholder="Your password"\n\n  [class.invalid]="!loginForm.controls.password.valid &&\n\n  loginForm.controls.password.dirty"></ion-input>\n\n  </ion-item>\n\n  <ion-item class="error-message"\n\n  *ngIf="!loginForm.controls.password.valid &&\n\n  loginForm.controls.password.dirty">\n\n  <p>Your password needs more than 6 characters.</p>\n\n  </ion-item>\n\n  <button ion-button block type="submit" [disabled]="!loginForm.valid">\n\n      Log In\n\n    </button>\n\n    </form>\n\n    <button ion-button block clear (click)="goToSignup()">\n\n    Create a new account\n\n    </button>\n\n    <button ion-button block clear (click)="goToResetPassword()">\n\n    I forgot my password :(\n\n    </button>\n\n    </ion-content>`/*ion-inline-end:"D:\dev\mobileProject\mobileProject\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],

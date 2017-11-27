@@ -79,7 +79,7 @@ var ParkListPage = (function () {
     };
     ParkListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-park-list',template:/*ion-inline-start:"C:\workspace\parksystem\src\pages\park-list\park-list.html"*/`<ion-header>\n  \n    <ion-navbar color ="primary">\n      <ion-title>Park HERE</ion-title>\n    </ion-navbar>\n  \n    <ion-toolbar>\n      <ion-searchbar [(ngModel)]="searchQuery"\n          (ionInput)="getParks($event)"\n          (ionClear)="resetList($event)">\n      </ion-searchbar>\n    </ion-toolbar>\n  </ion-header>\n  \n  \n  <ion-content>\n    <ion-list [virtualScroll] = "parks" [headerFn]="customHeaderFn">\n      <ion-item-divider *virtualHeader="let header">\n        {{header}}\n      </ion-item-divider>\n      \n      <ion-item *virtualItem = "let park" (click) = "goParkDetails(park)" detail-push> \n        <h2>{{park.name}}</h2>\n        <p>{{park.loc}}</p>\n      </ion-item>\n    </ion-list>\n  </ion-content>\n  `/*ion-inline-end:"C:\workspace\parksystem\src\pages\park-list\park-list.html"*/
+            selector: 'page-park-list',template:/*ion-inline-start:"D:\dev\mobileProject\mobileProject\src\pages\park-list\park-list.html"*/`<ion-header>\n\n  \n\n    <ion-navbar color ="primary">\n\n      <ion-title>Park HERE</ion-title>\n\n    </ion-navbar>\n\n  \n\n    <ion-toolbar>\n\n      <ion-searchbar [(ngModel)]="searchQuery"\n\n          (ionInput)="getParks($event)"\n\n          (ionClear)="resetList($event)">\n\n      </ion-searchbar>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n  \n\n  \n\n  <ion-content>\n\n    <ion-list [virtualScroll] = "parks" [headerFn]="customHeaderFn">\n\n      <ion-item-divider *virtualHeader="let header">\n\n        {{header}}\n\n      </ion-item-divider>\n\n      \n\n      <ion-item *virtualItem = "let park" (click) = "goParkDetails(park)" detail-push> \n\n        <h2>{{park.name}}</h2>\n\n        <p>{{park.loc}}</p>\n\n      </ion-item>\n\n    </ion-list>\n\n  </ion-content>\n\n  `/*ion-inline-end:"D:\dev\mobileProject\mobileProject\src\pages\park-list\park-list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_park_data__["a" /* ParkData */]])
     ], ParkListPage);
@@ -120,23 +120,23 @@ var map = {
 		6
 	],
 	"../pages/event-list/event-list.module": [
-		329,
+		333,
 		5
 	],
 	"../pages/login/login.module": [
-		330,
+		329,
 		2
 	],
 	"../pages/park-details/park-details.module": [
-		331,
+		330,
 		4
 	],
 	"../pages/profile/profile.module": [
-		332,
+		331,
 		3
 	],
 	"../pages/reset-password/reset-password.module": [
-		333,
+		332,
 		1
 	],
 	"../pages/signup/signup.module": [
@@ -410,11 +410,11 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/event-create/event-create.module#EventCreatePageModule', name: 'EventCreatePage', segment: 'event-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/event-detail/event-detail.module#EventDetailPageModule', name: 'EventDetailPage', segment: 'event-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/event-list/event-list.module#EventListPageModule', name: 'EventListPage', segment: 'event-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/park-details/park-details.module#ParkDetailsPageModule', name: 'ParkDetailsPage', segment: 'park-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/reset-password/reset-password.module#ResetPasswordPageModule', name: 'ResetPasswordPage', segment: 'reset-password', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/event-list/event-list.module#EventListPageModule', name: 'EventListPage', segment: 'event-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -492,7 +492,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\workspace\parksystem\src\app\app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"C:\workspace\parksystem\src\app\app.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\dev\mobileProject\mobileProject\src\app\app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n\n`/*ion-inline-end:"D:\dev\mobileProject\mobileProject\src\app\app.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_4__providers_park_data__["a" /* ParkData */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__providers_park_data__["a" /* ParkData */]])
@@ -528,7 +528,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\workspace\parksystem\src\pages\home\home.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n`/*ion-inline-end:"C:\workspace\parksystem\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\dev\mobileProject\mobileProject\src\pages\home\home.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h2>Welcome to Ionic!</h2>\n\n  <p>\n\n    This starter project comes with simple tabs-based layout for apps\n\n    that are going to primarily use a Tabbed UI.\n\n  </p>\n\n  <p>\n\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n\n    update any existing page or create new pages.\n\n  </p>\n\n</ion-content>\n\n`/*ion-inline-end:"D:\dev\mobileProject\mobileProject\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], HomePage);
@@ -648,7 +648,7 @@ var TabsPage = (function () {
         this.tab1Root = __WEBPACK_IMPORTED_MODULE_1__park_list_park_list__["a" /* ParkListPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\workspace\parksystem\src\pages\tabs\tabs.html"*/`<ion-tabs color="primary">\n  <ion-tab [root]="tab1Root" tabTitle="Parks" tabIcon="walk"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Map" tabIcon="map"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"C:\workspace\parksystem\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\dev\mobileProject\mobileProject\src\pages\tabs\tabs.html"*/`<ion-tabs color="primary">\n\n  <ion-tab [root]="tab1Root" tabTitle="Parks" tabIcon="walk"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Map" tabIcon="map"></ion-tab>\n\n</ion-tabs>\n\n`/*ion-inline-end:"D:\dev\mobileProject\mobileProject\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
